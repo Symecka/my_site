@@ -18,8 +18,8 @@
     </header>
   <article>
     <h2>I am a Durham University finalist...</h2>
-    <p>I study Anthropology, and have taken a range of modules on both cultural and biological themes. I am expected to acheive a <b>2:1</b>, graduating in the summer of 2015.</p>
-    <p> Prior education includes St. Paul's Girls' School, where I received <b>A*AA</b> at A-level and ten GCSEs, <b>all A* or A</b>, including English and Mathematics.</p>
+    <small><p>I study Anthropology, and have taken a range of modules on both cultural and biological themes. I am expected to acheive a <b>2:1</b>, graduating in the summer of 2015.</p>
+    <p> Prior education includes St. Paul's Girls' School, where I received <b>A*AA</b> at A-level and ten GCSEs, <b>all A* or A</b>, including English and Mathematics.</p></small>
   </article>
   <article>
     <h2>...looking to go into buying/merchandising.</h2>
@@ -31,6 +31,9 @@
     <button>submit</button> </p>
   </submission>
   <script>
-    $("button").on("click", function() {alert("I'll be in touch soon!") });
+    ('div').on('click', function(){
+      (this).toggleClass('show-description');
+    }
+    ("button").on("click", function() {alert("I'll be in touch soon!") });
   </script>
 </body>
